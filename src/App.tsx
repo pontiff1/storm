@@ -1,28 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Myname from "./content/Myname/Myname";
+import Counter from "./content/Counter/Counter";
+import Todolist from "./content/Todolist/Todolist";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>памагите</p>
-        <p>Шо делать</p>
-        <p>где я?</p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>save our souls</p>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Myname/>
+      <Counter/>
+        <div></div>
+        <Todolist/>
     </div>
   );
 }
